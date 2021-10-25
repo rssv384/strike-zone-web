@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/static/estilo.css" />
+    <title>Strike Zone</title>
+</head>
+<body>
+    <div id="content"><h2 align="center">=== STRIKE ZONE ===</h2>
+        <div class="renglon">
+            <img src={{imagen}}>
+        </div>
+        {% if tipo_lanz %}
+            <div class="renglon">
+                <h3 align="center">¡{{tipo_lanz}}!</h3>
+            </div>
+        {% endif %}
+        <form action="" method="post">
+        {% if finJuego %}
+            <div class="row">
+                <p align="center"><input  class=grey style="height:75px;width:150px" type="submit" value="Nuevo Juego" name="btn"></input></p>
+            </div>
+        {% else %}
+            <div class="row">
+                <p align="center"><input  class=grey style="height:75px;width:150px" type="submit" value="Lanzar" name="btn"></input></p>
+            </div>
+            {% if tipo_lanz %}
+                <div class="row">
+                    <p align="center"><input  class=grey style="height:75px;width:150px" type="submit" value="Dejar de jugar" name="btn"></input></p>
+                </div>
+            {% endif %}
+        {% endif %}
+        </form>
+    <div id="footer">
+        &copy; Copyright 2021 por <a href="http://midominio.com/">mi</a>
+    </div>
+</body>
+</html>
