@@ -4,6 +4,7 @@ Programa en Python que imita el lanzamiento de pelotas de beisbol a la imagen de
 Para jugar, es necesario activar el programa desde la consola
   - set FLASK_APP=app.py
   - flask run
+
 para luego acceder al navegador en la dirección http://127.0.0.1:5000/ y jugar ahí.
 
 Se debe especificar un área como zona de strike, un área como zona de 'bolas' y otra zona de 'golpe'. Estas áreas están delimitadas claramente en la imagen proporcionada.
